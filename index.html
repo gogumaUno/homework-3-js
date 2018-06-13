@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>homework-3-js</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css">
+</head>
+<body>
+	<div id="mocha"></div>
+	
+	<script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+	<script src="http://chaijs.com/chai.js"></script>
+	<script>
+		var assert = chai.assert;
+	</script>
+	<script>
+		mocha.setup('bdd');
+	</script>
+	<script src="src/tests/test.js"></script>
+	<script src="src/scripts/homework-3-js.js"></script>
+	<script>
+		mocha.run();
+	</script>
+</body>
+</html>
