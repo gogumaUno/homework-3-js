@@ -12,7 +12,7 @@
   
   function toCamelCase(str) {
     return str
-    .split(str.indexOf('-') > 0 ? ('-') : ('_'))
+    .split(/-|_/)
     .map( (el, index) => {
       if(index) return el[0].toUpperCase() + el.slice(1);
       return el;
